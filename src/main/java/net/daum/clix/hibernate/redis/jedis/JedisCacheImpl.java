@@ -1,11 +1,12 @@
 package net.daum.clix.hibernate.redis.jedis;
 
-import net.daum.clix.hibernate.redis.RedisCache;
 import org.hibernate.cache.CacheException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.serializer.support.DeserializingConverter;
 import org.springframework.core.serializer.support.SerializingConverter;
+
+import net.daum.clix.hibernate.redis.RedisCache;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.exceptions.JedisConnectionException;

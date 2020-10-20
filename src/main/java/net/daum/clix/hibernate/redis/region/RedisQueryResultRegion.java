@@ -1,13 +1,14 @@
 package net.daum.clix.hibernate.redis.region;
 
-import net.daum.clix.hibernate.redis.RedisCache;
-import net.daum.clix.hibernate.redis.strategy.RedisAccessStrategyFactory;
+import java.util.Properties;
+
 import org.hibernate.cache.CacheException;
-import org.hibernate.cache.spi.QueryResultsRegion;
+import org.hibernate.cache.QueryResultsRegion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Properties;
+import net.daum.clix.hibernate.redis.RedisCache;
+import net.daum.clix.hibernate.redis.strategy.RedisAccessStrategyFactory;
 
 /**
  * @author jtlee

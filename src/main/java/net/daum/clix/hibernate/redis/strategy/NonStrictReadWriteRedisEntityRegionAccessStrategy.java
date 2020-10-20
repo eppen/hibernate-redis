@@ -1,13 +1,14 @@
 package net.daum.clix.hibernate.redis.strategy;
 
-import net.daum.clix.hibernate.redis.region.RedisEntityRegion;
 import org.hibernate.cache.CacheException;
-import org.hibernate.cache.spi.EntityRegion;
-import org.hibernate.cache.spi.access.EntityRegionAccessStrategy;
-import org.hibernate.cache.spi.access.SoftLock;
+import org.hibernate.cache.EntityRegion;
+import org.hibernate.cache.access.EntityRegionAccessStrategy;
+import org.hibernate.cache.access.SoftLock;
 import org.hibernate.cfg.Settings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import net.daum.clix.hibernate.redis.region.RedisEntityRegion;
 
 /**
  * @author jtlee

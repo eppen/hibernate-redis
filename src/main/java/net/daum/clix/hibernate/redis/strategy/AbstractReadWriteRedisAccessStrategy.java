@@ -1,12 +1,13 @@
 package net.daum.clix.hibernate.redis.strategy;
 
-import net.daum.clix.hibernate.redis.region.RedisTransactionalRegion;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.spi.access.SoftLock;
-import org.hibernate.cfg.Settings;
-
 import java.io.Serializable;
 import java.util.Comparator;
+
+import org.hibernate.cache.CacheException;
+import org.hibernate.cache.access.SoftLock;
+import org.hibernate.cfg.Settings;
+
+import net.daum.clix.hibernate.redis.region.RedisTransactionalRegion;
 
 
 /**

@@ -1,5 +1,19 @@
 package net.daum.clix.hibernate.redis;
 
+import java.util.Properties;
+
+import org.hibernate.cache.CacheDataDescription;
+import org.hibernate.cache.CacheException;
+import org.hibernate.cache.CollectionRegion;
+import org.hibernate.cache.EntityRegion;
+import org.hibernate.cache.QueryResultsRegion;
+import org.hibernate.cache.RegionFactory;
+import org.hibernate.cache.TimestampsRegion;
+import org.hibernate.cache.access.AccessType;
+import org.hibernate.cfg.Settings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import net.daum.clix.hibernate.redis.jedis.JedisCacheImpl;
 import net.daum.clix.hibernate.redis.region.RedisCollectionRegion;
 import net.daum.clix.hibernate.redis.region.RedisEntityRegion;
@@ -7,15 +21,7 @@ import net.daum.clix.hibernate.redis.region.RedisQueryResultRegion;
 import net.daum.clix.hibernate.redis.region.RedisTimestampsRegion;
 import net.daum.clix.hibernate.redis.strategy.RedisAccessStrategyFactory;
 import net.daum.clix.hibernate.redis.strategy.RedisAccessStrategyFactoryImpl;
-import org.hibernate.cache.CacheException;
-import org.hibernate.cache.spi.*;
-import org.hibernate.cache.spi.access.AccessType;
-import org.hibernate.cfg.Settings;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import redis.clients.jedis.JedisPool;
-
-import java.util.Properties;
 
 /**
  * @author jtlee
